@@ -1,0 +1,47 @@
+@media all and (max-width: 992px) {
+    #main-nav .toggle {
+        display: block;
+        color: #1AC056;
+        font-size: 20px;
+        text-align: right;
+        line-height: 50px;
+        padding-right: 15px;
+    }
+    
+    #main-nav ul {
+        display: none;
+    }
+    
+    #main-nav #drop:checked + ul {
+        display: block;
+    }
+    
+    #main-nav ul li {
+        width: 100%;
+        box-sizing: border-box;
+        padding-right: 15px;
+    }
+    
+    #about figure,
+    #about figure img,
+    #about p {
+        width: 100%;
+    }
+    
+    #skills figure {
+        width: 38%;
+    }
+    
+    .portfolio-item {
+        width: 100%;
+    }
+    
+    #contact .inner-left,
+    #contact .inner-right {
+        width: 100%;
+    }
+    
+    #contact .inner-left .social-icons {
+        margin-bottom: 20px;
+    }
+}

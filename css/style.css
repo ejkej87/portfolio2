@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/*scroll top*/
+
+
+
+/* header */
+#main-header {
+    height: 90vh;
+    background: url('../img/keyboard-2529270_960_720.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#main-header .inner {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+#main-header .inner h1,
+#main-header .inner h2 {
+    font-weight: 300;
+}
+
+#main-header .inner h1 {
+    font-size: 60px;
+}
+
+#main-header .inner h2 {
+    font-size: 40px;
+}
+
+#main-header .inner h1 span {
+    color: #1AC056;
+}
+
+
+
+section {
+    padding: 30px 60px;
+   padding-bottom: 150px;
+}
+
+header h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+header h2 span {
+    color: #1AC056;
+}
+
+/* nawigacja */
+#main-nav {
+    background-color: #FFF;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+#main-nav .toggle,
+#drop {
+    display: none;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+#main-nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+    line-height: 50px;
+}
+
+#main-nav ul li a {
+    color: #1AC056;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+#main-nav ul li a:hover {
+    color: #333;
+}
+
+
+/* about */
+#about {
+    background: #F9FCFE;
+    text-align: center;
+}
+
+#about h2 {
+    margin: 0;
+}
+
+#about figure,
+#about p {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+#about figure {
+    margin: 0;
+}
+
+#about figure img {
+    width: 50%;
+    border: 10px solid #FFF;
+    border-radius: 10px;
+}
+
+#about p {
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/* skills */
+
+#skills {
+    text-align: center;
+}
+
+#skills figure {
+    display: inline-block;
+}
+
+/* portfolio */
+#portfolio {
+    text-align: center;
+}
+
+.portfolio-item {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    float: left;
+    width: 33.33333%;
+}
+
+.portfolio-item .portfolio-item-mask {
+    height: 100%;
+    background-color: rgba(42, 61, 79, 0.8);
+    opacity: 0;
+    transition: all 0.4s;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.portfolio-item .portfolio-item-mask:hover {
+    opacity: 1;
+}
+
+.portfolio-item .portfolio-item-border {
+    border: 1px solid #FFF;
+    height: 100%;
+    position: relative;
+}
+
+.portfolio-item .portfolio-item-content {
+    text-align: center;
+    color: #FFF;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#portfolio-item-1 {
+    background-image: url('../img/portfolio1.jpg');
+}
+
+#portfolio-item-2 {
+    background-image: url('../img/portfolio2.jpg');
+}
+
+#portfolio-item-3 {
+    background-image: url('../img/portfolio3.jpg');
+}
+
+/* contact */
+#contact {
+    background-color: #213b50;
+    color: #FFF;
+}
+
+#contact .inner-left,
+#contact .inner-right {
+    float: left;
+    display: inline-block;
+    width: 50%;
+}
+
+#contact .inner-left address {
+    margin-bottom: 20px;
+    font-style: normal;
+}
+
+#contact .inner-left address a {
+    color: #1AC056;
+}
+
+#contact .social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #FFF;
+    color: #FFF
+}
+
+#contact .social-icons a i {
+    line-height: inherit;
+}
+
+#contact .inner-right form input,
+#contact .inner-right form textarea {
+    background-color: #2b4a64;
+    border: 1px solid #2b4a64;
+    color: #FFF;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+   
+}
+
+#contact .inner-right form textarea {
+    resize: none;
+}
+
+
+#contact .inner-right form input:focus {
+    border-color: #FFF;
+}
+
+#contact .inner-right form input[type="submit"] {
+    float: right;
+    width: 20%;
+    background-color: #1AC056;
+    border: 1px solid #1AC056;
+    color: #FFF;
+    text-transform: uppercase;
+    transition: all 0.4s;
+}
+
+
+
+#contact .inner-right form input[type="submit"]:hover{ 
+    background-color: #FFF;
+    color: #1AC056;
+}
+
+footer {
+    background-color: #142634;
+    padding: 0 60px;
+}
+
+footer p {
+    margin: 0;
+    color: #FFF;
+}
+
+#contact .social-icons a:hover{
+   color: #142634;
+   background-color: #fff;
+}

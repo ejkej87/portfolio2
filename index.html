@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+   <title>Document</title>
+
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=latin-ext" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato:300,400&amp;subset=latin-ext" rel="stylesheet">
+
+   <!-- font awesome -->
+   <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+   <!-- styles -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  
+ 
+   <!-- block nawigacja start -->
+   <nav id="main-nav">
+
+      <label for="drop" class="toggle">Menu</label>
+      <input type="checkbox" id="drop">
+
+      <ul>
+         <li><a href="#about">O mnie</a></li>
+         <li><a href="#skills">Umiejętności</a></li>
+         <li><a href="#portfolio">Portfolio</a></li>
+         <li><a href="#contact">Kontakt</a></li>
+      </ul>
+   </nav>
+   <!-- block nawigacja end -->
+
+   <!-- block header start -->
+   <header id="main-header">
+      <div class="inner">
+         <h1>Arkadiusz<span>Garzeł</span></h1>
+         <h2>Front End Developer</h2>
+      </div>
+   </header>
+   <!-- block header end -->
+
+   <!-- zaczynamy od glownego kontenera (sekcja), nastepnie (jak wynika z projektu) potrzebujemy 2 kontenery obok siebie ustawione na inline-block (figure i p, h2 jest block - wiec 2 kontenery spadna pod nia). Jako, ze zwracamy uwage na bialy znak przy wyswietlaniu inline-block, musimy w css uzyc wlasciwosci float (skoro uzywamy float, potrzebujemy miec tez element, ktory bedzie robil clear - stad na samym dole div.clear, ktory otrzymuje ta wlasciwosc) -->
+
+   <!-- section about start -->
+   <section id="about">
+      <h2>O <span>mnie</span></h2>
+      <figure>
+         <img src="img/zdjecie%20profilowe.png" alt="Arkadiusz Garzel">
+      </figure>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sequi deserunt expedita tenetur consequuntur tempore quibusdam explicabo culpa, modi eligendi ea pariatur provident, ratione delectus iste non incidunt doloremque. Enim.</p>
+      <div class="clear"></div>
+   </section>
+   <!-- section about end -->
+
+   <!-- skills -->
+   <section id="skills">
+      <h2>Moje <span>umiejetnosci</span></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas veritatis impedit iure commodi provident sit, magni dolore amet eum illo aspernatur alias, deleniti saepe neque assumenda dolor? Atque consequatur, neque.</p>
+      <figure>
+         <img src="icons/css3.png" alt="css3">
+         <figcaption>css3</figcaption>
+      </figure>
+      <figure>
+         <img src="icons/html5.png" alt="html5">
+         <figcaption>html5</figcaption>
+      </figure>
+      <figure>
+         <img src="icons/jquery.png" alt="jquery">
+         <figcaption>jquery</figcaption>
+      </figure>
+      <figure>
+         <img src="icons/js.png" alt="js">
+         <figcaption>js</figcaption>
+      </figure>
+   </section>
+
+   <!-- opacity -->
+   <section id="portfolio">
+      <h2>Moje <span>portfolio</span></h2>
+      <div class="portfolio-item" id="portfolio-item-1">
+         <div class="portfolio-item-mask">
+            <div class="portfolio-item-border">
+               <div class="portfolio-item-content">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <a href=""><i class="fa fa-chain fa-2x"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-item" id="portfolio-item-2">
+         <div class="portfolio-item-mask">
+            <div class="portfolio-item-border">
+               <div class="portfolio-item-content">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <a href=""><i class="fa fa-chain fa-2x"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="portfolio-item" id="portfolio-item-3">
+         <div class="portfolio-item-mask">
+            <div class="portfolio-item-border">
+               <div class="portfolio-item-content">
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <h3>Lorem ipsum</h3>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                  <a href=""><i class="fa fa-chain fa-2x"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="clear"></div>
+   </section>
+
+   <section id="contact">
+      <div class="inner-left">
+         <h2>Arkadiusz Garzeł</h2>
+         <address>
+                ul. Miodowa <br>
+                31-055 Kraków <br>
+                <br>
+                tel: 502 704 953 <br>
+                email: <a href="mailto:email@email.com">arkadiusz.garzel@gmail.com</a>
+            </address>
+
+         <div class="social-icons">
+            <a href=""><i class="fa fa-facebook fa-2x"></i></a>
+            <a href=""><i class="fa fa-google-plus fa-2x"></i></a>
+            <a href=""><i class="fa fa-twitter fa-2x"></i></a>
+            <a href=""><i class="fa fa-linkedin fa-2x"></i></a>
+         </div>
+      </div>
+      <div class="inner-right">
+         <form action="input">
+            <input type="text" id="name">
+            <input type="email" id="mail">
+            <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+            <input type="submit">
+         </form>
+      </div>
+      <div class="clear"></div>
+   </section>
+   <footer>
+      <p>Copyrights &copy; Arkadiusz Garzeł</p>
+   </footer>
+   
+   <script src="js/jquery-3.2.1.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+
+</html>
